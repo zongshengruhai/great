@@ -24,6 +24,12 @@ public class HttpDataFunc {
         return sb.toString();
     }
 
+    public static String getTimestamp(){
+        long time = System.currentTimeMillis();
+        String t = String.valueOf(time/1000);
+        return t;
+    }
+
     public static JSONObject StringToJSONObject(String data) {
         JSONObject jo = null;
         try {
