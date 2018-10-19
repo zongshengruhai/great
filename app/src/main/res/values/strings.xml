@@ -1,10 +1,16 @@
 <resources>
     <string name="app_name">科雷特</string>
 
+    <!--login-->
     <string name="login_usrNameTHint">用户名</string>
     <string name="login_usrNameHint">请输入用户名</string>
     <string name="login_usrPassTHint">密 码</string>
     <string name="login_usrPassHint">请输入密码</string>
     <string name="login_usrButton">登录</string>
-
+    
+    <!--main bottom menu-->
+    <string name="menu_home">首页</string>
+    <string name="menu_data">设备</string>
+    <string name="menu_console">控制台</string>
+    <string name="menu_me">我</string>
 </resources>

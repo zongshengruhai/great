@@ -14,8 +14,7 @@ import android.widget.Toast;
 
 import com.great.great.HttpManager.HttpDataFunc;
 import com.great.great.HttpManager.HttpUrlFunc;
-
-
+import com.jaeger.library.StatusBarUtil;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -35,6 +34,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        StatusBarUtil.setColor(this, getResources().getColor(R.color.colorPrimary),0);
+//        StatusBarUtil.setTranslucent(LoginActivity.this,55);
 
         loginUserName = findViewById(R.id.LoginUsrName);
         loginUserPass = findViewById(R.id.LoginUsrPass);
@@ -50,13 +51,11 @@ public class LoginActivity extends AppCompatActivity {
     public void onResume(){
         super.onResume();
         mHandler.post(mRunnable);
-        Log.e("login","1");
     }
     @Override
     public void onPause(){
         super.onPause();
         mHandler.removeCallbacks(mRunnable);
-        Log.e("login","2");
     }
 
     //输入初始化

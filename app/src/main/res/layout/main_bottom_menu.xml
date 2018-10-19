@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:id="@+id/menu_tag_1"
+        android:orientation="vertical"
+        android:onClick="LayoutOnClick"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/menu_tag_1_image"
+            android:contentDescription="@string/menu_home"
+            android:src="@mipmap/home"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/menu_tag_1_text"
+            android:textSize="20sp"
+            android:text="@string/menu_home"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_tag_2"
+        android:orientation="vertical"
+        android:onClick="LayoutOnClick"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/menu_tag_2_image"
+            android:contentDescription="@string/menu_data"
+            android:src="@mipmap/data"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/menu_tag_2_text"
+            android:textSize="20sp"
+            android:text="@string/menu_data"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_tag_3"
+        android:orientation="vertical"
+        android:onClick="LayoutOnClick"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/menu_tag_3_image"
+            android:contentDescription="@string/menu_console"
+            android:src="@mipmap/list"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/menu_tag_3_text"
+            android:textSize="20sp"
+            android:text="@string/menu_console"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_tag_4"
+        android:orientation="vertical"
+        android:onClick="LayoutOnClick"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/menu_tag_4_image"
+            android:contentDescription="@string/menu_me"
+            android:src="@mipmap/user"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/menu_tag_4_text"
+            android:textSize="24sp"
+            android:text="@string/menu_me"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
